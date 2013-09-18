@@ -1,0 +1,15 @@
+RT-Extension-Dancecard
+
+How to install:
+
+1. perl Makefile.PL
+2. make
+3. make install (may need root permissions)
+4. Edit your /opt/rt4/etc/RT_SiteConfig.pm 
+    Set(@Plugins, qw(RT::Extension::Dancecard));
+5. rm -rf /opt/rt3/var/mason_data/obj
+6. Restart your webserver
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2013 Kevin Riggle.  All rights reserved.
